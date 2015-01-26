@@ -15,7 +15,6 @@ eggs.push(new Brand("Stiebr's Farm Free Range", "egg", true, true, true, true, t
 eggs.push(new Brand("Stiebr's Farm Pasture Raised", "egg", true, true, true, true, false, "pasture raised"));
 eggs.push(new Brand("Trader Joe's Cage Free", "egg", false, false, true, true, false, "none"));
 eggs.push(new Brand("Trader Joe's Organic Free Range", "egg", true, false, true, true, false, "free-range"));
-console.log(eggs);
 
 var chickens = [];
 chickens.push(new Brand("Trader Joe's Organic FreeRange", "chicken", true, false, true, true, false, "none"));
@@ -30,4 +29,11 @@ chickens.push(new Brand("Foster Farms Organic", "chicken", true, true, true, tru
 chickens.push(new Brand("Safeway Farms", "chicken", false, false, false, false, false, "cage-free"));
 chickens.push(new Brand("Open Nature", "chicken",  false, false, true, true, true, "cage-free"));
 chickens.push(new Brand("O Organics", "chicken",  true, true, true, true, true, "cage-free"));
-console.log(chickens);
+
+$("chickenBrandResults").click(function() {
+  $('option').each(function(i) {
+    if(':selected' === chickens[0]) {
+      $('footer').append("<p>it works!</p>");
+    }
+  })
+});
