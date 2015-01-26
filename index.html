@@ -6,60 +6,80 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="normalize.css" rel="stylesheet" type="text/css" media="screen"/>
+    <link href='http://fonts.googleapis.com/css?family=Sigmar+One' rel='stylesheet' type='text/css'>
   </head>
-  <header>
+  <body>
+   <header>
     <div class="container">
       <div class="row">
         <div class="four columns">
           <img src="images/chicken.jpg"height="60px"width="60px">
         </div>
-        <div class="four columns">
-          <h1>Know Your Chicken!</h1>
+        <div class="eight columns">
+          <h1 class="TOP">Know Your Chicken!</h1>
         </div>
       </div>
     </div>
   </header>
-  <body>
     <main>
+      <div class="container">
+        <div class="row">
+          <div class="twelve columns">
+          <p>
+            Select your chicken brand of choice and "click" the results button to see how it weighs in. Once you're finished, do the same for eggs!
+          </p>
+        </div>
+      </div>
+    </div>
       <div class="container">
         <div class="row">
           <div class="six columns">
             <select>
               <option>Chicken Brand</option>
-              <option>Trader Joe's Organic Free Range</option>
               <option>365 Organics</option>
               <option>Applegate Naturals</option>
               <option>Applegate Organics</option>
-              <option>Simple Truth Organics</option>
-              <option>Tyson</option>
-              <option>Perdue</option>
               <option>Foster Farms</option>
               <option>Foster Farms Organics</option>
-              <option>Safeway Farms</option>
               <option>Open Nature</option>
               <option>O Organics</option>
+              <option>Perdue</option>
+              <option>Safeway Farms</option>
+              <option>Simple Truth Organics</option>
+              <option>Trader Joe's Organic Free Range</option>
+              <option>Tyson</option>
             </select>
         </div>
         <div class="six columns">
           <select>
+            <option>Egg Brand</option>
+            <option>Stiebrs Farms Free Range</option>
+            <option>Stiebrs Farms Go Organic Omega3</option>
+            <option>Stiebrs Farms Pasture Raised</option>
             <option>Trader Joe's Cage Free</option>
             <option>Trader Joe's Organic Free Range</option>
-            <option>Stiebrs Farms Go Organic Omega3</option>
-            <option>Stiebrs Farms Free Range</option>
-            <option>Stiebrs Farms Pasture Raised</option>
           </select>
       </div>
     </div>
     <div class="container">
+    <div class="row">
+      <div class"six columns">
+        <button>Results</button>
+      </div>
+      <div class="six columns">
+        <button>Results</button>
+      </div>
+    </div>
+  </div>
+    <div class="container">
       <div class="row">
         <div class="twelve columns">
-          <h1>What Matters to You?</h1>
+          <h1 class="BOTTOM">What Matters to You?</h1>
         </div>
       </div>
       <div class="row">
-        <div class="twelve columns">
-          <input type="checkbox" label="All organic">All Organic</input>
+        <div class="checkbox twelve columns">
+          <input type="checkbox"label="All organic">All Organic</input>
           <input type="checkbox"label="GMO Free">GMO Free</input>
           <input type="checkbox"label="No Added Hormones">No Added Hormones</input>
           <input type="checkbox"label="No Antibiotics">No Antibiotics</input>

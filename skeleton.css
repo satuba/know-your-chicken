@@ -28,10 +28,26 @@
 
 /* Grid
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.Background {
-  background-image: url(/home/ewpaige/Visualize-a-Data-Structure-Algorithm/STARS.jpg);
-  background-position: center;
-  background-size: 100%;
+p {
+}
+.TOP {
+  position: relative;right: 40%;
+}
+html {
+  background-image: url(images/chicken-farm-essick_66070_990x742.jpg);
+  background-size: cover;
+}
+h1 {
+  font-family: 'Sigmar One', cursive;
+  color: #A70100;
+  text-decoration: underline;
+  font-weight: lighter;
+  font-style: oblique;
+}
+input[type="checkbox"] {
+  color: white;
+  font-size: 18px;
+  font-weight: bolder;
 }
 .container {
   position: relative;
@@ -283,6 +299,7 @@ fieldset {
   border-width: 0; }
 input[type="checkbox"],
 input[type="radio"] {
+  color: white;
   display: inline; }
 label > .label-body {
   display: inline-block;
