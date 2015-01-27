@@ -283,7 +283,6 @@ legend {
  */
 
 button,
-input,
 select,
 textarea {
     font-family: inherit; /* 1 */
