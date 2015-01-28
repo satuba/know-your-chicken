@@ -56,6 +56,7 @@ $("#eggDrop").on("change", function() {
  });
 
 $(".chkBrand").hide();
+$(".eggBrand").hide();
 
 function checkboxChecked() {
   if("[data-organic='true']:checked") {
