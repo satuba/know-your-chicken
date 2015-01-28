@@ -35,6 +35,11 @@ a:hover {
 	float: left;
 }
 
+.socialicons {
+	float: right;
+	padding-right: 20px;
+}
+
 /*Information*/
 .links {
 	display: block;
