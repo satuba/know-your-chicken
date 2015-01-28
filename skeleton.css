@@ -465,3 +465,4 @@ there.
 
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {}
+html, a:hover {cursor: url(http://cur.cursors-4u.net/games/gam-10/gam934.ani), url(http://cur.cursors-4u.net/games/gam-10/gam934.png), progress !important;} 
