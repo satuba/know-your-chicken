@@ -36,7 +36,6 @@ select {
  #cover {
    width: 101%;
    height: 100%;
-   ;
    opacity: 0.5;
  }
 .BOTTOM {
@@ -63,27 +62,24 @@ select {
 }
 p {
   color: black;
-  font-weight: bolder;
+  font: Optima;
   font-size: 18px;
   margin: 20px;
   padding: 10px;
 }
 .TOP {
   position: relative;right: 40%;
-}
-html {
-  padding: 20px;
-  background-image: url(https://raw.githubusercontent.com/satuba/know-your-chicken/master/images/chickenfarmopaque.jpg);
-  background-size: cover;
-  color: black;
-}
-h1 {
   font-family: 'Sigmar One', cursive;
   color: #A70100;
   text-decoration: underline;
   font-weight: lighter;
   font-style: oblique;
   opacity: 1.0;
+}
+html {
+  background-image: url(images/chickenfarmopaque.jpg);
+  background-size: cover;
+  color: black;
 }
 input[type="checkbox"] {
   color: black;

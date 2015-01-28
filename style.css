@@ -1,1 +1,46 @@
-/*Style*/ 
+/*Header and Footer*/
+
+.headerfooter {
+	background-color: #FEE8D6;
+}
+.footerlayout {
+	display: inline-block;
+}
+.navbar {
+  display: inline-block;
+  height: 30px;
+  width: 80px;
+  color: brown;
+  background-color: #E9967A;
+}
+#tinytext {
+	font-size: 14px;
+	color: brown;
+	padding-left: 30px;
+	padding-top: 28px;
+}
+.footernav {
+	float: right;
+	padding-right: 30px;
+
+}
+a {
+  text-decoration: none;
+  color: brown;
+  font-family: Arial;
+}
+a:hover {
+	color: black;
+}
+
+/*Information*/
+.links {
+	display: block;
+	text-align: center;
+}
+.linkheader {
+	font-family: 'Sigmar One', cursive;
+}
+.aboutlayout {
+	display: inline-block;
+}

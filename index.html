@@ -2,6 +2,8 @@
 <html>
   <head>
     <link href="skeleton.css"rel="stylesheet"type="text/css"/>
+    <link href="style.css" rel="stylesheet" type="text/css" media="screen"/>    
+    <link href="normalize.css"rel="stylesheet"type="text/css"/>
     <title>Know your chicken</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,7 +11,7 @@
     <link href='http://fonts.googleapis.com/css?family=Sigmar+One' rel='stylesheet' type='text/css'>
   </head>
   <body>
-   <header>
+   <header class="headerfooter">
     <div class="container">
       <div class="row">
         <div class="four columns">
@@ -21,11 +23,11 @@
       </div>
     </div>
     <nav>
-      <ul>
-        <li>Home</li>
-        <li>Search</li>
-        <li>About Us</li>
-        <li>Info</li>
+      <ul class="twelve.columns">
+        <li class="navbar"><a href="home.html">Home</a></li>
+        <li class="navbar"><a href="index.html">Search</a></li>
+        <li class="navbar"><a href="aboutUs.html">About</a></li>
+        <li class="navbar"><a href="information.html">Info</a></li>
       </ul>
     </nav> 
   </header>
@@ -44,37 +46,29 @@
           <div class="six columns">
             <select class="dropdown" name="options" id="chickenDrop">
               <option>Chicken Brand</option>
-              <option id="365">365 Organics</option>
-              <option id="appNat">Applegate Naturals</option>
-              <option id="appOrg">Applegate Organics</option>
-              <option id="FF">Foster Farms</option>
-              <option id="FFO">Foster Farms Organics</option>
-              <option id="opNat">Open Nature</option>
-              <option id="oOrg">O Organics</option>
-              <option id="perdue">Perdue</option>
-              <option id="safe">Safeway Farms</option>
-              <option id="sTruthOrg">Simple Truth Organics</option>
-              <option id="TJOFR">Trader Joe's Organic Free Range</option>
-              <option id="tyson">Tyson</option>
+              <option value="365">365 Organics</option>
+              <option value="appNat">Applegate Naturals</option>
+              <option value="appOrg">Applegate Organics</option>
+              <option value="FF">Foster Farms</option>
+              <option value="FFO">Foster Farms Organics</option>
+              <option value="opNat">Open Nature</option>
+              <option value="oOrg">O Organics</option>
+              <option value="perdue">Perdue</option>
+              <option value="safe">Safeway Farms</option>
+              <option value="sTruthOrg">Simple Truth Organics</option>
+              <option value="TJOFR">Trader Joe's Organic Free Range</option>
+              <option value="tyson">Tyson</option>
             </select>
         </div>
         <div class="six columns">
           <select class="dropdown" id="eggDrop">
             <option>Egg Brand</option>
-            <option id="SFFR">Stiebrs Farms Free Range</option>
-            <option id="SFOO3">Stiebrs Farms Go Organic Omega3</option>
-            <option id="SFPR">Stiebrs Farms Pasture Raised</option>
-            <option id="TJCF">Trader Joe's Cage Free</option>
-            <option id="TJOFR">Trader Joe's Organic Free Range</option>
+            <option value="SFFR">Stiebrs Farms Free Range</option>
+            <option value="SFOO3">Stiebrs Farms Go Organic Omega3</option>
+            <option value="SFPR">Stiebrs Farms Pasture Raised</option>
+            <option value="TJCF">Trader Joe's Cage Free</option>
+            <option value="TJOFR">Trader Joe's Organic Free Range</option>
           </select>
-      </div>
-    </div>
-  </div>
-  <div class="container">
-    <div class="row">
-      <div class"twelve columns">
-        <button id="chickenBrandResults">Results Chicken</button>
-        <button id="eggBrandResults">Results Egg</button>
       </div>
     </div>
   </div>
@@ -107,16 +101,18 @@
         <p id="output"></p>
       </section>
     </main>
-    <footer>
-      <p>Copyright © 2015 Know Your Chicken</p>
-      <nav>
-        <ul>
-          <li>Home</li>
-          <li>Search</li>
-          <li>About Us</li>
-          <li>Info</li>
-        </ul>
-      </nav>
+    <footer class="headerfooter">
+      <div class="twelve.columns">
+      <p class="footerlayout four.columns" id="tinytext">Copyright © 2015 Know Your Chicken</p>
+        <nav class="footerlayout eight.columns" id="footernav">
+          <ul>
+            <li class="navbar"><a href="home.html">Home</a></li>
+            <li class="navbar"><a href="index.html">Search</a></li>
+            <li class="navbar"><a href="aboutUs.html">About</a></li>
+            <li class="navbar"><a href="information.html">Info</a></li>
+          </ul>
+        </nav>
+      </div>
     </footer>
     <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
     <script type="text/javascript" src="script.js"></script>
