@@ -16,7 +16,9 @@ main {
 .outputLayout {
   display: inline-block;
 }
-
+.dropdown {
+  margin-top: 20px;
+}
 /*Header and Footer*/
 
 .headerfooter {
@@ -52,9 +54,7 @@ a {
   color: #193119;
   font-family: 'Abel', sans-serif;
 }
-a:hover {
-	color: black;
-}
+
 #footerimage {
 	float: left;
   width: 200px;
