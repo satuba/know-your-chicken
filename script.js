@@ -27,7 +27,7 @@ var chickens = {
   perdue : new Brand("Perdue", "chicken", false, false, false, true,  false, "cage-free"),
   FF : new Brand("Foster Farms", "chicken", false, false, false, true, true, "cage-free"),
   FFO : new Brand("Foster Farms Organic", "chicken", true, true, true, true, true, "cage-free"),
-  safeway : new Brand("Safeway Farms", "chicken", false, false, false, false, false, "cage-free"),
+  safe : new Brand("Safeway Farms", "chicken", false, false, false, false, false, "cage-free"),
   opNat : new Brand("Open Nature", "chicken",  false, false, true, true, true, "cage-free"),
   oOrg : new Brand("O Organics", "chicken",  true, true, true, true, true, "cage-free")
 };
