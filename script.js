@@ -12,7 +12,7 @@ function Brand(name, type, organic, gmofree, antibioticsfree, naturalDiet, human
 var eggs = {
  SFOO3 : new Brand("Stiebr's Farm Omega3", "egg", true, true, true, true, true, "none"),
   SFFR : new Brand("Stiebr's Farm Free Range", "egg", true, true, true, true, true, "free-range"),
-  SFPR : new Brand("Stiebr's Farm Pasture Raised", "egg", true, true, true, true, true, "pasture raised"),
+  SFPR : new Brand("Stiebr's Farm Pasture Raised", "egg", true, true, true, true, true, "pasture-raised"),
   TJCF : new Brand("Trader Joe's Cage Free", "egg", false, false, true, true, false, "none"),
   TJOFR : new Brand("Trader Joe's Organic Free Range", "egg", true, false, true, true, false, "free-range")
 };
@@ -55,6 +55,20 @@ $("#eggDrop").on("change", function() {
                         <tr>" + "<td> Range: </td> <td>" + selectedEgg.range + "</td> </tr>");
 
  });
+
+$(".chkBrand").hide()
+
+
+
+
+   $("#VBB").on("click",function(){
+      $("[data-gmoFree='true']").show(),
+      $("[data-organic='true']").show(),
+      $("[data-noAntibiotics='true']").show(),
+      $("[data-diet='true']").show(),
+      $("[data-humane='true']").show(),
+      $("[data-range='cage-free', 'free-range','pasture-raised']").show()
+  });
 
 
 
