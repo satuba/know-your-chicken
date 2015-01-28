@@ -41,18 +41,20 @@ $("#chickenDrop").on("change", function() {
                         <tr>" + "<td> Antibiotic Free: </td> <td>" + selectedChicken.antibioticsfree + "</td> </tr> \
                         <tr>" + "<td> Natural Diet: </td> <td>" + selectedChicken.naturalDiet+ "</td> </tr> \
                         <tr>" + "<td> Humanely Raised: </td> <td>" + selectedChicken.humaneRaised + "</td> </tr> \
-                        <tr>" + "<td> Range: </td> <td>" + selectedChicken.range + "</td> </tr>");
+                        <tr>" + "<td> Range: </td> <td>" + selectedChicken.range + "</td> </tr>"),
+   $("#outputImage").append("<img src='images/chickenoutput.jpg'>");
  });
 
 $("#eggDrop").on("change", function() {
   var selectedEgg = eggs[$(this).val()];
-   $('#output').append("<tr>" + "<td> Name: </td> <td>" + selectedEgg.name + "</td> </tr> \
+    $('#output').append("<tr>" + "<td> Name: </td> <td>" + selectedEgg.name + "</td> </tr> \
                         <tr>" + "<td> Organic: </td> <td>" + selectedEgg.organic + "</td> </tr> \
                         <tr>" + "<td> GMO Free: </td> <td>" + selectedEgg.gmofree+ "</td> </tr> \
                         <tr>" + "<td> Antibiotic Free: </td> <td>" + selectedEgg.antibioticsfree + "</td> </tr> \
                         <tr>" + "<td> Natural Diet: </td> <td>" + selectedEgg.naturalDiet+ "</td> </tr> \
                         <tr>" + "<td> Humanely Raised: </td> <td>" + selectedEgg.humaneRaised + "</td> </tr> \
-                        <tr>" + "<td> Range: </td> <td>" + selectedEgg.range + "</td> </tr>");
+                        <tr>" + "<td> Range: </td> <td>" + selectedEgg.range + "</td> </tr>"),
+    $("#outputImage").append("<img src='images/egg.jpg'>");
  });
 
 $(".chkBrand").hide();
