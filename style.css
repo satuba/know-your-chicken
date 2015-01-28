@@ -1,38 +1,60 @@
+body {
+  width: 1000px;
+  margin-right: auto;
+  margin-left: auto;
+  background-image: url(images/chickenbackground.jpg);
+  background-size: cover;
+}
+
+main {
+  background-color: white;
+  border: 5px solid #005200;
+  margin-bottom: 40px;
+  margin-top: 40px;
+
+}
 /*Header and Footer*/
 
 .headerfooter {
-	background-color: #FEE8D6;
+	background-color: white;
+  background-color: white;
+  border: 5px solid #005200;
+  margin-bottom: 40px;
+  margin-top: 40px;
 }
 .footerlayout {
-	display: inline-block;
+	display: inline;
 }
 .navbar {
   display: inline-block;
   height: 30px;
   width: 80px;
-  color: brown;
-  background-color: #E9967A;
+  color: #005200;
+  background-color: #99C299;
+  text-align: center;
 }
 #tinytext {
 	font-size: 14px;
-	color: brown;
+	color: #193119;
 	padding-left: 30px;
 	padding-top: 28px;
 }
 .headfootnav {
-	float: right;
 	padding-right: 40px;
+  text-align: center;
 }
 a {
   text-decoration: none;
-  color: brown;
-  font-family: Arial;
+  color: #193119;
+  font-family: 'Abel', sans-serif;
 }
 a:hover {
 	color: black;
 }
 #footerimage {
 	float: left;
+  width: 200px;
+  height: 200px;
 }
 
 .socialicons {
@@ -46,7 +68,7 @@ a:hover {
 	text-align: center;
 }
 .linkheader {
-	font-family: 'Sigmar One', cursive;
+	font-family: 'Pacifico', cursive;
 }
 .aboutlayout {
 	display: inline-block;

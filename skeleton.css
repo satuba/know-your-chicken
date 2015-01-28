@@ -29,8 +29,7 @@
 /* Grid
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 select {
-  background-color: black;
-  color: red;
+  color: gray;
 }
  }
  #cover {
@@ -41,45 +40,34 @@ select {
 .BOTTOM {
   position: relative;left: 60px;
 }
-.dropdown {
-  background-color: black;
-}
+
 .checkbox.six.columns {
   color: black;
   font-weight: bolder;
   font-size: 18px;
   position: relative;left: 18%;
 }
-#chickenBrandResults {
-  position: relative;left: 40px;
-  color: red;
-  
-}
-#eggBrandResults {
-  position: relative;left: 385px;
-  color: red;
-  
-}
+
 p {
   color: black;
-  font: Optima;
+  font-family: 'Abel', sans-serif;
   font-size: 18px;
   margin: 20px;
   padding: 10px;
 }
 .TOP {
-  font-family: 'Sigmar One', cursive;
-  color: #A70100;
-  text-decoration: underline;
-  font-weight: lighter;
-  font-style: oblique;
-  opacity: 1.0;
+  font-family: 'Pacifico', cursive;
+  color: #005200;
+  font-size: 48px; 
+  display: inline;
+  text-align: center;
+  margin-left: 60px;
 }
-html {
+/*html {
   background-image: url(images/chickenfarmopaque.jpg);
   background-size: cover;
   color: black;
-}
+}*/
 input[type="checkbox"] {
   color: black;
   font-size: 18px;
@@ -88,7 +76,7 @@ input[type="checkbox"] {
 .container {
   position: relative;
   width: 100%;
-  max-width: 960px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 0 20px;
   box-sizing: border-box; }
@@ -101,14 +89,14 @@ input[type="checkbox"] {
 /* For devices larger than 400px */
 @media (min-width: 400px) {
   .container {
-    width: 85%;
+    /*width: 85%;*/
     padding: 0; }
 }
 
 /* For devices larger than 550px */
 @media (min-width: 550px) {
   .container {
-    width: 80%; }
+    /*width: 80%;*/ }
   .column,
   .columns {
     margin-left: 4%; }
@@ -347,12 +335,14 @@ label > .label-body {
 ul {
   list-style: none; 
   text-align: center;
+  margin-left: 80px;
+  display: inline-block;
 }
 ol {
   list-style: decimal inside; }
 ol, ul {
   padding-left: 10px;
-  margin:20px; }
+  }
 ul ul,
 ul ol,
 ol ol,
