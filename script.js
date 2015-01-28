@@ -53,24 +53,29 @@ $("#eggDrop").on("change", function() {
                         <tr>" + "<td> Natural Diet: </td> <td>" + selectedEgg.naturalDiet+ "</td> </tr> \
                         <tr>" + "<td> Humanely Raised: </td> <td>" + selectedEgg.humaneRaised + "</td> </tr> \
                         <tr>" + "<td> Range: </td> <td>" + selectedEgg.range + "</td> </tr>");
-
  });
 
-$(".chkBrand").hide()
+$(".chkBrand").hide();
 
+function checkboxChecked() {
+  if("[data-organic='true']:checked") {
+    $("[data-organic='true']").show()
+  }
+  else if("[data-gmoFree='true']:checked") {
+    $("[data-gmoFree='true']").show()
+  }
+  else if("[data-noAntibiotics='true']:checked") {
+    $("[data-noAntibiotics='true']").show()
+  }
+  else if("[data-range='true']:checked") {
+    $("[data-range='true']").show()
+  }
+  else if("[data-humane='true']:checked") {
+    $("[data-humane='true']").show()
+  }
+  else if("[data-diet='true']:checked") {
+    $("[data-diet='true']").show()
+  }
+};
 
-
-
-   $("#VBB").on("click",function(){
-      $("[data-gmoFree='true']").show(),
-      $("[data-organic='true']").show(),
-      $("[data-noAntibiotics='true']").show(),
-      $("[data-diet='true']").show(),
-      $("[data-humane='true']").show(),
-      $("[data-range='cage-free', 'free-range','pasture-raised']").show()
-  });
-
-
-
-
-
+$("#VBB").on("click", checkboxChecked);
