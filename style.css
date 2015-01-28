@@ -19,10 +19,9 @@
 	padding-left: 30px;
 	padding-top: 28px;
 }
-.footernav {
+.headfootnav {
 	float: right;
-	padding-right: 30px;
-
+	padding-right: 40px;
 }
 a {
   text-decoration: none;
@@ -31,6 +30,9 @@ a {
 }
 a:hover {
 	color: black;
+}
+#footerimage {
+	float: left;
 }
 
 /*Information*/
