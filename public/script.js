@@ -56,6 +56,40 @@ $("#eggDrop").on("change", function() {
     $("#outputImage").append("<img src='images/egg.jpg'>");
  });
 
+function save(){
+    var checkbox1 = document.getElementById('AO');
+    localStorage.setItem('AO', checkbox1.checked);
+    var checkbox2 = document.getElementById('GM');
+    localStorage.setItem('GM', checkbox2.checked);
+    var checkbox3 = document.getElementById('NA');
+    localStorage.setItem('NA', checkbox3.checked);
+    var checkbox4 = document.getElementById('FR');
+    localStorage.setItem('FR', checkbox4.checked);
+    var checkbox5 = document.getElementById('HR');
+    localStorage.setItem('HR', checkbox5.checked);
+    var checkbox6 = document.getElementById('ND');
+    localStorage.setItem('ND', checkbox6.checked);
+}
+
+function load(){    
+    var checked1 = JSON.parse(localStorage.getItem('AO'));
+    document.getElementById("AO").checked = checked1;
+    var checked2 = JSON.parse(localStorage.getItem('GM'));
+    document.getElementById("GM").checked = checked2;
+    var checked3 = JSON.parse(localStorage.getItem('NA'));
+    document.getElementById("NA").checked = checked3;
+    var checked4 = JSON.parse(localStorage.getItem('FR'));
+    document.getElementById("FR").checked = checked4;
+    var checked5 = JSON.parse(localStorage.getItem('HR'));
+    document.getElementById("HR").checked = checked5;
+    var checked6 = JSON.parse(localStorage.getItem('ND'));
+    document.getElementById("ND").checked = checked6;  
+}
+
+function clearChecks(){
+    localStorage.clear()
+}
+
 $(document).ready(function(){
     $('input[type="checkbox"]').click(function(){
         if($(this).attr("value")=="organic"){
@@ -90,7 +124,7 @@ $(document).ready(function(){
               <li>Stiebrs farms go-organic omega3</li> \
               <li>Stiebrs Farms go-organic free-range</li> \
               <li>Stiebrs Farms pasture raised</li></ul>"),
-            $("#chickencheck").append("<h1>GMO free chicken brands:</h1><ul> \
+            $("#chickencheck").append("<h1>Antibiotic free chicken brands:</h1><ul> \
               <li>365 Organics</li>\
               <li>Applegate Naturals</li>\
               <li>Applegate Organics</li>\
@@ -148,5 +182,11 @@ $(document).ready(function(){
               <li>O Organics</li> \
               </ul>")
         }
+      save();
     });
 });
+
+$(document).ready(function () {
+  load();
+  clearChecks();
+});    
