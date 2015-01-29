@@ -93,10 +93,11 @@ function clearChecks(){
 $(document).ready(function(){
     $('input[type="checkbox"]').click(function(){
         if($(this).attr("value")=="organic"){
-            $("#ischecked").append("<h1>Organic egg brands:</h1><ul><li>Trader Joe's organic Free Range</li> \
-              <li>Stiebrs farms go-organic omega3</li> \
-              <li>Stiebrs Farms go-organic free-range</li> \
-              <li>Stiebrs Farms pasture raised</li></ul>"),
+            $("#ischecked").append("<h1>Organic egg brands:</h1><ul>
+              <li>Trader Joe's organic Free Range</li> \
+              <a href="http://www.stiebrsfarms.com/"><li>Stiebrs farms go-organic omega3</li></a> \
+              <a href="http://www.stiebrsfarms.com/"><li>Stiebrs Farms go-organic free-range</li></a> \
+              <a href="http://www.stiebrsfarms.com/"><li>Stiebrs Farms pasture raised</li></a></ul>"),
             $("#chickencheck").append("<h1>Organic chicken brands:</h1><ul><li>Trader Joe's Organic free range</li> \
               <li>365 Organics</li>\
               <li>Applegate Organics</li>\
@@ -107,9 +108,9 @@ $(document).ready(function(){
         }
         if($(this).attr("value")=="gmoFree"){
             $("#ischecked").append("<h1>GMO free egg brands:</h1><ul> \
-              <li>Stiebrs farms go-organic omega3</li> \
-              <li>Stiebrs Farms go-organic free-range</li> \
-              <li>Stiebrs Farms pasture raised</li></ul>"),
+              <a href="http://www.stiebrsfarms.com/"><li>Stiebrs farms go-organic omega3</li></a> \
+              <a href="http://www.stiebrsfarms.com/"><li>Stiebrs Farms go-organic free-range</li></a> \
+              <a href="http://www.stiebrsfarms.com/"><li>Stiebrs Farms pasture raised</li></a></ul>"),
             $("#chickencheck").append("<h1>GMO free chicken brands:</h1><ul> \
               <li>365 Organics</li>\
               <li>Applegate Organics</li>\
@@ -119,11 +120,12 @@ $(document).ready(function(){
               </ul>")
         }
         if($(this).attr("value")=="noAntibiotics"){
-            $("#ischecked").append("<h1>Antibiotic free egg brands:</h1><ul><li>Trader Joe's cage free</li> \
+            $("#ischecked").append("<h1>Antibiotic free egg brands:</h1><ul>
+              <li>Trader Joe's cage free</li> \
               <li>Trader Joe's organic Free Range</li> \
-              <li>Stiebrs farms go-organic omega3</li> \
-              <li>Stiebrs Farms go-organic free-range</li> \
-              <li>Stiebrs Farms pasture raised</li></ul>"),
+              <a href="http://www.stiebrsfarms.com/"><li>Stiebrs farms go-organic omega3</li></a> \
+              <a href="http://www.stiebrsfarms.com/"><li>Stiebrs Farms go-organic free-range</li></a> \
+              <a href="http://www.stiebrsfarms.com/"><li>Stiebrs Farms pasture raised</li></a></ul>"),
             $("#chickencheck").append("<h1>Antibiotic free chicken brands:</h1><ul> \
               <li>365 Organics</li>\
               <li>Applegate Naturals</li>\
@@ -136,10 +138,11 @@ $(document).ready(function(){
 
         }
         if($(this).attr("value")=="range"){
-            $("#ischecked").append("<h1>Egg brands - good living conditions:</h1><ul><li>Trader Joe's cage free</li> \
+            $("#ischecked").append("<h1>Egg brands - good living conditions:</h1><ul>
+              <li>Trader Joe's cage free</li> \
               <li>Trader Joe's organic Free Range</li> \
-              <li>Stiebrs Farms go-organic free-range</li> \
-              <li>Stiebrs Farms pasture raised</li></ul>"),
+              <a href="http://www.stiebrsfarms.com/"><li>Stiebrs Farms go-organic free-range</li></a> \
+              <a href="http://www.stiebrsfarms.com/"><li>Stiebrs Farms pasture raised</li></a></ul>"),
             $("#chickencheck").append("<h1>Chicken brands - good living conditions:</h1><ul> \
               <li>Trader Joe's Organic free range</li>\
               <li>Simple Truth Organic cage free</li>\
@@ -152,9 +155,9 @@ $(document).ready(function(){
         }
         if($(this).attr("value")=="humane"){
             $("#ischecked").append("<h1>Egg brands - Humanely raised:</h1><ul>\
-              <li>Stiebrs farms go-organic omega3</li> \
-              <li>Stiebrs Farms go-organic free-range</li> \
-              <li>Stiebrs Farms pasture raised</li></ul>"),
+              <a href="http://www.stiebrsfarms.com/"><li>Stiebrs farms go-organic omega3</li></a> \
+              <a href="http://www.stiebrsfarms.com/"><li>Stiebrs Farms go-organic free-range</li></a> \
+              <a href="http://www.stiebrsfarms.com/"><li>Stiebrs Farms pasture raised</li></a></ul>"),
             $("#chickencheck").append("<h1>Chicken brands - Humanely raised:</h1><ul> \
               <li>365 Organics</li>\
               <li>Applegate Naturals</li>\
@@ -166,11 +169,12 @@ $(document).ready(function(){
               </ul>")
         }
         if($(this).attr("value")=="diet"){
-            $("#ischecked").append("<h1>Egg brands - Natural diet:</h1><ul><li>Trader Joe's cage free</li> \
+            $("#ischecked").append("<h1>Egg brands - Natural diet:</h1><ul>
+              <li>Trader Joe's cage free</li> \
               <li>Trader Joe's organic Free Range</li> \
-              <li>Stiebrs farms go-organic omega3</li> \
-              <li>Stiebrs Farms go-organic free-range</li> \
-              <li>Stiebrs Farms pasture raised</li></ul>"),
+              <a href="http://www.stiebrsfarms.com/"><li>Stiebrs farms go-organic omega3</li></a> \
+              <a href="http://www.stiebrsfarms.com/"><li>Stiebrs Farms go-organic free-range</li></a> \
+              <a href="http://www.stiebrsfarms.com/"><li>Stiebrs Farms pasture raised</li></a></ul>"),
             $("#chickencheck").append("<h1>Chicken brands - Natural diet:</h1><ul> \
               <li>365 Organics</li>\
               <li>Applegate Naturals</li>\
