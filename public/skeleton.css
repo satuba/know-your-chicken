@@ -55,7 +55,7 @@ h1 {
 p {
   color: black;
   font-family: 'Abel', sans-serif;
-  font-size: 28px;
+  font-size: 24px;
 }
 
 .TOP {
@@ -337,7 +337,7 @@ label > .label-body {
 ul {
   list-style: none; 
   text-align: center;
-  margin-left: 80px;
+  margin-left: 10px;
   display: inline-block;
 }
 ol {

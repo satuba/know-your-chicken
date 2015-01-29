@@ -16,8 +16,18 @@ main {
 .outputLayout {
   display: inline-block;
 }
+
+td {
+  font-size: 18px;
+}
+
+#output {
+  margin: 25px;
+}
+
 .dropdown {
-  margin-top: 20px;
+  margin: 40px;
+  text-align: center;
 }
 
 #homeChicken {
@@ -29,7 +39,7 @@ main {
 
 label {
   font-family: "Abel", sans-serif;
-  font-size: 24px;
+  font-size: 22px;
 }
 
 p h1 {
@@ -42,6 +52,7 @@ ul li {
   float: left;
   display: inline;
   font-size: 24px;
+  margin: 20px;
 }
 
 #chickencheck {
@@ -95,6 +106,7 @@ a {
 }
 
 #footerimage {
+  margin-top: 5px;
 	float: left;
   width: 200px;
   height: 200px;

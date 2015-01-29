@@ -1,3 +1,5 @@
+document.body.style.zoom="80%"
+
 function Brand(name, type, organic, gmofree, antibioticsfree, naturalDiet, humaneRaised, range) {
   this.name = name;
   this.type = type;
