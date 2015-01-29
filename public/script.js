@@ -63,35 +63,57 @@ $("#eggDrop").on("change", function() {
 // })
 
 // $("#VBB").on("click", function(){
-//   $("[data-organic='true']").show();
+//   f ($(this.value).is(":checked")
 // })
 
-$(".eggBrand").hide();
+
+
+// $("#VBB").on("click",function(){
+//   $("[data-organic='true']").show()
+//  }); 
+
 
 //Here starts the CHECKBOX adventure
 
+// <script>
+// var countChecked = function() {
+//   var n = $( "input:checked" ).length;
+//   $( "div" ).text( n + (n === 1 ? " is" : " are") + " checked!" );
+// };
+// countChecked();
+ 
+
+// </script>
+$(".eggBrand").hide();
+
 // function checkboxChecked() {
-//   var values = this.value;
-//   if(this(":checked") {
-//     $("[data-organic='true']").show()
-//   }
-//   else if("[data-gmoFree='true']:checked") {
-//     $("[data-gmoFree='true']").show()
-//   }
-//   else if("[data-noAntibiotics='true']:checked") {
-//     $("[data-noAntibiotics='true']").show()
-//   }
-//   else if("[data-range='true']:checked") {
-//     $("[data-range='true']").show()
-//   }
-//   else if("[data-humane='true']:checked") {
-//     $("[data-humane='true']").show()
-//   }
-//   else if("[data-diet='true']:checked") {
-//     $("[data-diet='true']").show()
+//   if $("input.this.value:checked") {
+//     $().show();
 //   }
 // };
 
+
+$( "VBB" ).on("click", function(){
+  $("input").each(function(){
+    if $('[value="gmoFree"]'){
+      $("[data-gmoFree='true']").show()
+    if $('[value="organic"]'){
+      $("[data-organic='true']").show()  
+    if $('[value="noAntibiotics"]'){
+      $("[data-noAntibiotics='true']").show() 
+    if $('[value="range"]'){
+      $("[data-range='true']").show() 
+    if $('[value="humane"]'){
+      $("[data-humane='true']").show()  
+    if $('[value="diet"]'){
+      $("[data-diet='true']").show()      
+    }
+  });
+});
+
+
+//$("#VBB").on("click", checkboxChecked);
+// $( "input[type=checkbox]" ).on( "click", checkboxChecked);
 // $("#VBB").on("click", function(){
 //   $("input").each(function(){
 //     $(this.value(":checked"));
@@ -137,7 +159,13 @@ $(".eggBrand").hide();
 // });
 //$("#VBB").on("click", submit);
 
-
+// var countChecked = function() {
+//   var n = $( "input:checked" ).length;
+//   $( "#ischecked" ).text( n + (n === 1 ? " is" : " are") + " checked!" );
+// };
+// countChecked();
+ 
+//$( "input[type=checkbox]" ).on( "click", countChecked );
 
 
 
