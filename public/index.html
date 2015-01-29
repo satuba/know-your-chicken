@@ -52,12 +52,12 @@
         </div>
       <div class="row">
         <div class="checkbox six columns">
-          <input data-organic="true"type="checkbox"label="All organic">All Organic</input>
-          <input data-gmoFree="true"type="checkbox"label="GMO Free">GMO Free</input>
-          <input data-noAntibiotics="true"type="checkbox"label="No Antibiotics">No Antibiotics</input>
-          <input data-range="true"type="checkbox"label="Free Range">Free Range/Cage Free/Pasture Raised</input>
-          <input data-humane="true"type="checkbox"label="Humanely Raised">Humanely Raised</input>
-          <input data-diet="true"type="checkbox"label="Natural Diet">Natural Diet</input>
+          <label><input type="checkbox" name="organic" value="organic"> Organic</label>
+          <label><input type="checkbox" name="gmoFree" value="gmoFree"> GMO Free</label>
+          <label><input type="checkbox" name="noAntibiotics" value="noAntibiotics"> Antibiotic Free</label>
+          <label><input type="checkbox" name="range" value="range">Cage-fee/free-range/pasture-raised</label>
+          <label><input type="checkbox" name="humane" value="humane">Humanely Raised</label>
+          <label><input type="checkbox" name="diet" value="diet">Natural Diet</label>
         </div>
       </div> 
       <div class="row">
@@ -67,27 +67,9 @@
       </div>
       <div>
         <div class="row">
-          <ul>
-            <li class="chkBrand" data-gmoFree="true" data-organic="true" data-noAntibiotics="true"data-diet="true"data-humane="true"data-range="N/A">365 Organics</li>
-            <li class="chkBrand"data-gmoFree="true"data-organic="true"data-noAntibiotics="true"data-diet="true"data-humane="true"data-range="N/A">Applegate Naturals</li>
-            <li class="chkBrand" data-gmoFree="true"data-organic="true"data-noAntibiotics="true"data-diet="true"data-humane="true"data-range="N/A">Applegate Organics</li>
-            <li class="chkBrand"data-gmoFree="false"data-organic="false"data-noAntibiotics="false"data-diet="true"data-humane="true"data-range="Cage Free">Foster Farms</li>
-            <li class="chkBrand"data-gmoFree="true"data-organic="true"data-noAntibiotics="true"data-diet="true"data-humane="true"data-range="Cage Free">Foster Farms Organics</li>
-            <li class="chkBrand" data-gmoFree="false"data-organic="false"data-noAntibiotics="true"data-diet="true"data-humane="true"data-range="Cage Free">Open Nature</li>
-            <li class="chkBrand"data-gmoFree="true"data-organic="true"data-noAntibiotics="true"data-diet="true"data-humane="true"data-range="Cage Free">O Organics</li>
-            <li class="chkBrand"data-gmoFree="false"data-organic="false"data-noAntibiotics="false"data-diet="true"data-humane="false"data-range="Cage Free">Perdue</li>
-            <li class="chkBrand"data-gmoFree="false"data-organic="false"data-noAntibiotics="false"data-diet="false"data-humane="false"data-range="Cage Free">Safeway Farms</li>
-            <li class="chkBrand"data-gmoFree="true"data-organic="true"data-noAntibiotics="true"data-diet="false"data-humane="false"data-range="Free Range">Simple Truth Organics</li>
-            <li class="chkBrand"data-gmoFree="N/A"data-organic="true"data-noAntibiotics="true"data-diet="true"data-humane="false"data-range="N/A">Trader Joe's Organic Free Range</li>
-            <li class="chkBrand"data-gmoFree="false"data-organic="false"data-noAntibiotics="false"data-diet="false"data-humane="false"data-range="N/A">Tyson</li>
-          </ul>
-          <ul>
-            <li class="eggBrand"data-gmoFree="true"data-organic="true"data-noAntibiotics="true"data-diet="true"data-humane="true"data-range="Free Range">Stiebr's Farms Free Range</li>
-            <li class="eggBrand"data-gmoFree="true"data-organic="true"data-noAntibiotics="true"data-diet="true"data-humane="true"data-range="N/A">Stiebr's Farms Go Organic Omega 3</li>
-            <li class="eggBrand"data-gmoFree="true"data-organic="true"data-noAntibiotics="true"data-diet="true"data-humane="true"data-range="N/A">Stiebr's Pasture Raised</li>
-            <li class="eggBrand"data-gmoFree="false"data-organic="false"data-noAntibiotics="true"data-diet="true"data-humane="false"data-range="N/A">Trader Joe's Cage Free</li>
-            <li class="eggBrand"data-gmoFree="false"data-organic="true"data-noAntibiotics="true"data-diet="true"data-humane="false"data-range="Free Range">Trader Joe's Organic Free Range</li>
-          </ul>
+          <p>These brands match with your preferences: </p>
+          <p id="ischecked"></p>
+          <p id="chickencheck"></p>
         </div>
       </div> 
       <div class="container">
