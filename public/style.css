@@ -20,7 +20,15 @@ main {
   margin-top: 20px;
 }
 /*Header and Footer*/
-
+.aboutlayout {
+  position: relative;
+  display: inline-block;
+  padding-top: 30px;
+}
+.socialicons {
+  float: right;
+  padding-right: 10px;
+}
 .headerfooter {
 	background-color: white;
   background-color: white;
