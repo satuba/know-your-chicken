@@ -19,6 +19,29 @@ main {
 .dropdown {
   margin-top: 20px;
 }
+
+label {
+  font-family: "Abel", sans-serif;
+  font-size: 24px;
+}
+
+p h1 {
+  font-size: 30px;
+}
+ul li {
+  font-size: 24px;
+}
+#ischecked {
+  float: left;
+  display: inline;
+  font-size: 24px;
+}
+
+#chickencheck {
+  float: right;
+  display: inline;
+  font-size: 24px;
+}
 /*Header and Footer*/
 
 .headerfooter {
