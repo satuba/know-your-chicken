@@ -17,9 +17,9 @@
           <div class="two.columns footerlayout">
             <img src="images/chicken.jpg" id="footerimage">
           </div>
-          <div class="six.columns footerlayout">
+          <!-- <div class="six.columns footerlayout"> -->
             <h1 class="TOP">Know Your Chicken!</h1>
-          </div>
+          <!-- </div> -->
           <nav class="footerlayout headfootnav">
             <ul>
               <li class="navbar"><a href="home.html">Home</a></li>
@@ -37,21 +37,11 @@
       </div>
     </header>
     <main>
-      <div class="container">
-        <div class="row">
-          <div class="twelve columns">
-            <p>Select the properties that matter to you from the checkboxes, and you'll get the brands that match with your preferences. After that you can select which ever brand from the dropdown menu that you want and get more information on it.</p>
-          </div>
-        </div>
+      <div class="twelve columns">
+        <p>Select the properties that matter to you with the checkboxes and see which brands match your preferences. </p>
       </div>
-      <div class="container">
-        <div class="row">
-          <div class="twelve columns">
-            <h1 class="BOTTOM">Select the ones that matter to you.</h1>
-          </div>
-        </div>
       <div class="row">
-        <div class="checkbox six columns">
+        <div class="checkbox eight columns">
           <label><input id="AO" type="checkbox" name="organic" value="organic"> Organic</label>
           <label><input id="GM" type="checkbox" name="gmoFree" value="gmoFree"> GMO Free</label>
           <label><input id="NA" type="checkbox" name="noAntibiotics" value="noAntibiotics"> Antibiotic Free</label>
@@ -60,14 +50,13 @@
           <label><input id= "ND" type="checkbox" name="diet" value="diet">Natural Diet</label>
         </div>
       </div> 
-      <div>
-        <div class="row">
-          <p>These brands match with your preferences: </p>
-          <p id="ischecked"></p>
-          <p id="chickencheck"></p>
-        </div>
-      </div> 
       <div class="container">
+        <p id="ischecked"></p>
+        <p id="chickencheck"></p>
+      </div>
+      <div class="container">
+        <h1>OR</h1>
+        <p>You can select a specific brand in the dropdown menu to see it's details. </p>
         <div class="row">
           <div class="six columns">
             <select class="dropdown" name="options" id="chickenDrop">
@@ -99,7 +88,6 @@
         </div>
       </div>
       <section>
-        <h1>Search results:</h1>
         <p id="output" class="outputLayout"></p>
         <p id="outputImage" class="outputLayout"></p>
       </section>  

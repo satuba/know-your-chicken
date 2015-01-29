@@ -39,36 +39,39 @@ select {
  }
 .BOTTOM {
   position: relative;left: 60px;
+  font-family: 'Abel', sans-serif;
 }
 
 .checkbox.six.columns {
-  font-size: 18px;
+  font-size: 24px;
+  font-family: 'Abel', sans-serif;
 }
 
+h1 {
+  font-family: 'Abel', sans-serif;
+  font-size: 30px;
+  text-align: center;
+}
 p {
   color: black;
   font-family: 'Abel', sans-serif;
-  font-size: 18px;
-  margin: 20px;
-  padding: 10px;
+  font-size: 28px;
 }
+
 .TOP {
   font-family: 'Pacifico', cursive;
   color: #005200;
-  font-size: 48px; 
+  font-size: 75px; 
   display: inline;
   text-align: center;
-  margin-left: 60px;
+  margin-left: 40px;
 }
-/*html {
-  background-image: url(images/chickenfarmopaque.jpg);
-  background-size: cover;
-  color: black;
-}*/
+
 input[type="checkbox"] {
   color: black;
   font-size: 18px;
-  font-weight: bolder;
+  font-family: 'Abel', sans-serif;
+  margin-left: 100px;
 }
 .container {
   position: relative;
@@ -194,7 +197,9 @@ h6 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0; }
 }
 
 p {
-  margin-top: 0; }
+  margin: 15px;
+  text-align: center;
+}
 
 
 /* Links
