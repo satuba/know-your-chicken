@@ -54,14 +54,14 @@ ul li {
   font-size: 24px;
 }
 #ischecked {
-  float: left;
+  float: right;
   display: inline;
   font-size: 24px;
   margin: 20px;
 }
 
 #chickencheck {
-  float: right;
+  float: left;
   display: inline;
   font-size: 24px;
 }
