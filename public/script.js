@@ -1,5 +1,6 @@
 document.body.style.zoom="80%"
 
+//Object constructor
 function Brand(name, type, organic, gmofree, antibioticsfree, naturalDiet, humaneRaised, range) {
   this.name = name;
   this.type = type;
@@ -11,6 +12,7 @@ function Brand(name, type, organic, gmofree, antibioticsfree, naturalDiet, human
   this.range = range;
 }
 
+//Chicken objects
 var chickens = {
   TJOFR : new Brand("Trader Joe's Organic FreeRange", "chicken", "yes", "no", "yes", "yes", "no", "N/A"),
   365 :new Brand("365 Organics", "chicken", "yes", "yes", "yes", "yes", "yes", "N/A"),
@@ -27,6 +29,7 @@ var chickens = {
   PFC : new Brand("Prestige Farms", "chicken", "no", "no", "no", "no", "no", "N/A")
 };
 
+//Egg objects
 var eggs = {
   EggB : new Brand("Eggland's Best", "egg", "no", "no", "no", "no", "no", "N/A"),
   SFOO3 : new Brand("Stiebr's Farm Omega3", "egg", "yes", "yes", "yes", "yes", "yes", "N/A"),
@@ -41,6 +44,7 @@ var eggs = {
   WXF : new Brand("Wilcox Farms", "egg", "no", "no", "no", "no", "yes", "N/A")
 };
 
+//Dropdown menu table creators
 $("#chickenDrop").on("change", function() {
   var selectedChicken = chickens[$(this).val()];
    $('#chickenoutput').prepend("<table><tr>" + "<td> Name: </td> <td>" + selectedChicken.name + "</td> </tr>        \
@@ -65,6 +69,7 @@ $("#eggDrop").on("change", function() {
                         <tr>" + "<td> Range: </td> <td>" + selectedEgg.range + "</td> </tr></table>");
  });
 
+//JSON
 function save() {
   var checkbox1 = document.getElementById('AO');
   localStorage.setItem('AO', checkbox1.checked);
@@ -99,6 +104,7 @@ function clearChecks() {
   localStorage.clear()
 }
 
+//Checkbox lists
 $(document).ready(function() {
   $('input[type="checkbox"]').one("click", function(){
     if($(this).attr("value")=="organic"){
@@ -212,6 +218,7 @@ $(document).ready(function() {
     });
 });
 
+//JSON
 $(document).ready(function () {
   load();
   clearChecks();
