@@ -28,51 +28,6 @@
 
 /* Grid
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-select {
-  color: gray;
-}
- }
- #cover {
-   width: 101%;
-   height: 100%;
-   opacity: 0.5;
- }
-.BOTTOM {
-  position: relative;left: 60px;
-  font-family: 'Abel', sans-serif;
-}
-
-.checkbox.six.columns {
-  font-size: 24px;
-  font-family: 'Abel', sans-serif;
-}
-
-h1 {
-  font-family: 'Abel', sans-serif;
-  font-size: 30px;
-  text-align: center;
-}
-p {
-  color: black;
-  font-family: 'Abel', sans-serif;
-  font-size: 24px;
-}
-
-.TOP {
-  font-family: 'Pacifico', cursive;
-  color: #005200;
-  font-size: 75px; 
-  display: inline;
-  text-align: center;
-  margin-left: 40px;
-}
-
-input[type="checkbox"] {
-  color: black;
-  font-size: 18px;
-  font-family: 'Abel', sans-serif;
-  margin-left: 100px;
-}
 .container {
   position: relative;
   width: 100%;

@@ -1,0 +1,50 @@
+body {
+  width: 1000px;
+  margin-right: auto;
+  margin-left: auto;
+  background-image: url(images/chickenbackground.jpg);
+  background-size: cover;
+}
+main {
+  background-color: white;
+  border: 5px solid #005200;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+td {
+  font-size: 18px;
+}
+label {
+  font-family: "Abel", sans-serif;
+  font-size: 22px;
+}
+p h1 {
+  font-size: 30px;
+}
+ul li {
+  font-size: 24px;
+}
+a {
+  text-decoration: none;
+  color: #193119;
+  font-family: 'Abel', sans-serif;
+}
+select {
+  color: gray;
+}
+h1 {
+  font-family: 'Abel', sans-serif;
+  font-size: 30px;
+  text-align: center;
+}
+p {
+  color: black;
+  font-family: 'Abel', sans-serif;
+  font-size: 24px;
+}
+input[type="checkbox"] {
+  color: black;
+  font-size: 18px;
+  font-family: 'Abel', sans-serif;
+  margin-left: 100px;
+}
