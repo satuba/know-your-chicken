@@ -100,9 +100,9 @@ function clearChecks() {
 }
 
 $(document).ready(function() {
-  $('input[type="checkbox"]').click(function(){
+  $('input[type="checkbox"]').one("click", function(){
     if($(this).attr("value")=="organic"){
-      $("#ischecked").append("<h1>Organic egg brands:</h1> \
+      $("#ischecked").prepend("<h1>Organic egg brands:</h1> \
         <ul><li>Trader Joe's organic Free Range</li> \
         <li>Stiebrs farms go-organic omega3</li> \
         <li>Misty Meadow Farms</li> \
@@ -110,7 +110,7 @@ $(document).ready(function() {
         <li>Trout Lake Abbey</li> \
         <li>Stiebrs Farms go-organic free-range</li> \
         <li>Stiebrs Farms pasture raised</li></ul>"),
-      $("#chickencheck").append("<h1>Organic chicken brands:</h1> \
+      $("#chickencheck").prepend("<h1>Organic chicken brands:</h1> \
         <ul><li>Trader Joe's Organic free range</li> \
         <li>365 Organics</li> \
         <li>Applegate Organics</li> \
@@ -120,14 +120,14 @@ $(document).ready(function() {
         </ul>")
     }
     if($(this).attr("value")=="gmoFree") {
-      $("#ischecked").append("<h1>GMO free egg brands:</h1> \
+      $("#ischecked").prepend("<h1>GMO free egg brands:</h1> \
         <ul><li>Stiebrs farms go-organic omega3</li> \
         <li>Misty Meadow Farms</li> \
         <li>Organic Valley</li> \
         <li>Trout Lake Abbey</li> \
         <li>Stiebrs Farms go-organic free-range</li> \
         <li>Stiebrs Farms pasture raised</li></ul>"),
-      $("#chickencheck").append("<h1>GMO free chicken brands:</h1> \
+      $("#chickencheck").prepend("<h1>GMO free chicken brands:</h1> \
         <ul><li>365 Organics</li>\
         <li>Applegate Organics</li>\
         <li>Simple Truth Organic</li>\
@@ -136,7 +136,7 @@ $(document).ready(function() {
         </ul>")
     }
     if($(this).attr("value")=="noAntibiotics") {
-      $("#ischecked").append("<h1>Antibiotic free egg brands:</h1> \
+      $("#ischecked").prepend("<h1>Antibiotic free egg brands:</h1> \
         <ul><li>Trader Joe's cage free</li> \
         <li>Trader Joe's organic Free Range</li> \
         <li>Stiebrs farms go-organic omega3</li> \
@@ -145,7 +145,7 @@ $(document).ready(function() {
         <li>Trout Lake Abbey</li> \
         <li>Stiebrs Farms go-organic free-range</li> \
         <li>Stiebrs Farms pasture raised</li></ul>"),
-      $("#chickencheck").append("<h1>Antibiotic free chicken brands:</h1> \
+      $("#chickencheck").prepend("<h1>Antibiotic free chicken brands:</h1> \
         <ul><li>365 Organics</li>\
         <li>Applegate Naturals</li>\
         <li>Applegate Organics</li>\
@@ -156,14 +156,14 @@ $(document).ready(function() {
         </ul>")
     }
     if($(this).attr("value")=="range") {
-      $("#ischecked").append("<h1>Egg brands - good living conditions:</h1> \
+      $("#ischecked").prepend("<h1>Egg brands - good living conditions:</h1> \
         <ul><li>Trader Joe's cage free</li> \
         <li>Trader Joe's organic Free Range</li> \
          <li>Misty Meadow Farms</li> \
         <li>Trout Lake Abbey</li> \
         <li>Stiebrs Farms go-organic free-range</li> \
         <li>Stiebrs Farms pasture raised</li></ul>"),
-      $("#chickencheck").append("<h1>Chicken brands - good living conditions:</h1> \
+      $("#chickencheck").prepend("<h1>Chicken brands - good living conditions:</h1> \
         <ul><li>Trader Joe's Organic free range</li>\
         <li>Simple Truth Organic cage free</li>\
         <li>Foster Farms cage free</li>\
@@ -174,11 +174,11 @@ $(document).ready(function() {
         </ul>")
     }
     if($(this).attr("value")=="humane") {
-      $("#ischecked").append("<h1>Egg brands - Humanely raised:</h1> \
+      $("#ischecked").prepend("<h1>Egg brands - Humanely raised:</h1> \
         <ul><li>Stiebrs farms go-organic omega3</li> \
         <li>Stiebrs Farms go-organic free-range</li> \
         <li>Stiebrs Farms pasture raised</li></ul>"),
-      $("#chickencheck").append("<h1>Chicken brands - Humanely raised:</h1> \
+      $("#chickencheck").prepend("<h1>Chicken brands - Humanely raised:</h1> \
         <ul><li>365 Organics</li>\
         <li>Applegate Naturals</li>\
         <li>Applegate Organics</li>\
@@ -189,7 +189,7 @@ $(document).ready(function() {
         </ul>")
     }
     if($(this).attr("value")=="diet") {
-      $("#ischecked").append("<h1>Egg brands - Natural diet:</h1> \
+      $("#ischecked").prepend("<h1>Egg brands - Natural diet:</h1> \
         <ul><li>Trader Joe's cage free</li> \
         <li>Trader Joe's organic Free Range</li> \
         <li>Misty Meadow Farms</li> \
@@ -197,7 +197,7 @@ $(document).ready(function() {
         <li>Stiebrs farms go-organic omega3</li> \
         <li>Stiebrs Farms go-organic free-range</li> \
         <li>Stiebrs Farms pasture raised</li></ul>"),
-      $("#chickencheck").append("<h1>Chicken brands - Natural diet:</h1> \
+      $("#chickencheck").prepend("<h1>Chicken brands - Natural diet:</h1> \
         <ul><li>365 Organics</li>\
         <li>Applegate Naturals</li>\
         <li>Applegate Organics</li>\
