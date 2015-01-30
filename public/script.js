@@ -100,7 +100,7 @@ function clearChecks() {
 }
 
 $(document).ready(function() {
-  $('input[type="checkbox"]').click(function(){
+  $('input[type="checkbox"]').one("click", function(){
     if($(this).attr("value")=="organic"){
       $("#ischecked").prepend("<h1>Organic egg brands:</h1> \
         <ul><li>Trader Joe's organic Free Range</li> \
