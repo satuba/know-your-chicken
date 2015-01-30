@@ -12,33 +12,33 @@ function Brand(name, type, organic, gmofree, antibioticsfree, naturalDiet, human
 }
 
 var chickens = {
-  TJOFR : new Brand("Trader Joe's Organic FreeRange", "chicken", true, false, true, true, false, "none"),
-  365 :new Brand("365 Organics", "chicken", true, true, true, true, true, "none"),
-  appNat :new Brand("Applegate Naturals", "chicken", true, true, true, true, true, "none"),
-  appOrg : new Brand("Applegate Organics", "chicken", false, false,true, true, true, "none"),
-  sTruthOrg :new Brand("Simple Truth Organic", "chicken", true, true, true, false, false, "free-range"),
-  tyson : new Brand("Tyson", "chicken", false, false, false, false, false, "none"),
-  perdue : new Brand("Perdue", "chicken", false, false, false, true,  false, "cage-free"),
-  FF : new Brand("Foster Farms", "chicken", false, false, false, true, true, "cage-free"),
-  FFO : new Brand("Foster Farms Organic", "chicken", true,  true, true, true, true, "cage-free"),
-  safe : new Brand("Safeway Farms", "chicken", false, false, false, false, false, "cage-free"),
-  opNat : new Brand("Open Nature", "chicken", false, false, true, true, true, "cage-free"),
-  oOrg : new Brand("O Organics", "chicken", true, true, true, true, true, "cage-free"),
-  PFC : new Brand("Prestige Farms", "chicken", false, false, false, false, false, "none")
+  TJOFR : new Brand("Trader Joe's Organic FreeRange", "chicken", "yes", "no", "yes", "yes", "no", "N/A"),
+  365 :new Brand("365 Organics", "chicken", "yes", "yes", "yes", "yes", "yes", "N/A"),
+  appNat :new Brand("Applegate Naturals", "chicken", "yes", "yes", "yes", "yes", "yes", "N/A"),
+  appOrg : new Brand("Applegate Organics", "chicken", "no", "no","yes", "yes", "yes", "N/A"),
+  sTruthOrg :new Brand("Simple Truth Organic", "chicken", "yes", "yes", "yes", "no", "no", "free-range"),
+  tyson : new Brand("Tyson", "chicken", "no", "no", "no", "no", "no", "N/A"),
+  perdue : new Brand("Perdue", "chicken", "no", "no", "no", "yes",  "no", "cage-free"),
+  FF : new Brand("Foster Farms", "chicken", "no", "no", "no", "yes", "yes", "cage-free"),
+  FFO : new Brand("Foster Farms Organic", "chicken", "yes",  "yes", "yes", "yes", "yes", "cage-free"),
+  safe : new Brand("Safeway Farms", "chicken", "no", "no", "no", "no", "no", "cage-free"),
+  opNat : new Brand("Open Nature", "chicken", "no", "no", "yes", "yes", "yes", "cage-free"),
+  oOrg : new Brand("O Organics", "chicken", "yes", "yes", "yes", "yes", "yes", "cage-free"),
+  PFC : new Brand("Prestige Farms", "chicken", "no", "no", "no", "no", "no", "N/A")
 };
 
 var eggs = {
-  EggB : new Brand("Eggland's Best", "egg", false, false, false, false, false, "none"),
-  SFOO3 : new Brand("Stiebr's Farm Omega3", "egg", true, true, true, true, true, "none"),
-  SFFR : new Brand("Stiebr's Farm Free Range", "egg", true, true, true, true, true, "free-range"),
-  SFPR : new Brand("Stiebr's Farm Pasture Raised", "egg", true, true, true, true, false, "pasture raised"),
-  TJCF : new Brand("Trader Joe's Cage Free", "egg", false, false, true, true, false, "none"),
-  TJOFR : new Brand("Trader Joe's Organic Free Range", "egg", true, false, true, true, false, "free-range"),
-  MMF : new Brand("Misty Meadow Farms", "egg", true, true, true, true, true, "pasture raised"),
-  OrgV : new Brand("Organic Valley", "egg", true, true, true, true, false, "none"),
-  TCH : new Brand("The Country Hen", "egg", false, false, false, false, false, "none"),
-  TLA : new Brand("Trout Lake Abbey", "egg", true, true, true, true, true, "pasture raised"),
-  WXF : new Brand("Wilcox Farms", "egg", false, false, false, false, true, "none")
+  EggB : new Brand("Eggland's Best", "egg", "no", "no", "no", "no", "no", "N/A"),
+  SFOO3 : new Brand("Stiebr's Farm Omega3", "egg", "yes", "yes", "yes", "yes", "yes", "N/A"),
+  SFFR : new Brand("Stiebr's Farm Free Range", "egg", "yes", "yes", "yes", "yes", "yes", "free-range"),
+  SFPR : new Brand("Stiebr's Farm Pasture Raised", "egg", "yes", "yes", "yes", "yes", "no", "pasture raised"),
+  TJCF : new Brand("Trader Joe's Cage Free", "egg", "no", "no", "yes", "yes", "no", "N/A"),
+  TJOFR : new Brand("Trader Joe's Organic Free Range", "egg", "yes", "no", "yes", "yes", "no", "free-range"),
+  MMF : new Brand("Misty Meadow Farms", "egg", "yes", "yes", "yes", "yes", "yes", "pasture raised"),
+  OrgV : new Brand("Organic Valley", "egg", "yes", "yes", "yes", "yes", "no", "N/A"),
+  TCH : new Brand("The Country Hen", "egg", "no", "no", "no", "no", "no", "N/A"),
+  TLA : new Brand("Trout Lake Abbey", "egg", "yes", "yes", "yes", "yes", "yes", "pasture raised"),
+  WXF : new Brand("Wilcox Farms", "egg", "no", "no", "no", "no", "yes", "N/A")
 };
 
 $("#chickenDrop").on("change", function() {
