@@ -1,23 +1,24 @@
-body {
-  width: 1000px;
-  margin-right: auto;
-  margin-left: auto;
-  background-image: url(images/chickenbackground.jpg);
-  background-size: cover;
+ #cover {
+   width: 101%;
+   height: 100%;
+   opacity: 0.5;
+ }
+.BOTTOM {
+  position: relative;left: 60px;
+  font-family: 'Abel', sans-serif;
 }
-
-main {
-  background-color: white;
-  border: 5px solid #005200;
-  margin-bottom: 40px;
-  margin-top: 40px;
-
+.checkbox.six.columns {
+  font-size: 24px;
+  font-family: 'Abel', sans-serif;
 }
-
-td {
-  font-size: 18px;
+.TOP {
+  font-family: 'Pacifico', cursive;
+  color: #005200;
+  font-size: 75px; 
+  display: inline;
+  text-align: center;
+  margin-left: 40px;
 }
-
 .outputLayout {
   margin: 50px;
   display: inline;
@@ -29,29 +30,15 @@ td {
 #eggoutput {
   float: right;
 }
-
 .dropdown {
   margin: 40px;
   text-align: center;
 }
-
 #homeChicken {
   width: 600px;
   margin-left: 200px;
   margin-right: 200px;
   margin-bottom: 30px;
-}
-
-label {
-  font-family: "Abel", sans-serif;
-  font-size: 22px;
-}
-
-p h1 {
-  font-size: 30px;
-}
-ul li {
-  font-size: 24px;
 }
 #ischecked {
   float: right;
@@ -59,7 +46,6 @@ ul li {
   font-size: 24px;
   margin: 20px;
 }
-
 #chickencheck {
   float: left;
   display: inline;
@@ -104,33 +90,23 @@ ul li {
 	padding-right: 40px;
   text-align: center;
 }
-a {
-  text-decoration: none;
-  color: #193119;
-  font-family: 'Abel', sans-serif;
-}
-
 #footerimage {
   margin-top: 5px;
 	float: left;
   width: 200px;
   height: 200px;
 }
-
 .socialicons {
 	float: right;
 	padding-right: 20px;
 }
-
 #aboutUsChickens {
   text-align: center;
   width: 650px;
   margin-left: 175px;
   margin-right: 175px;
-
 }
-
-/*Information*/
+/*Information page*/
 .links {
 	display: block;
 	text-align: center;
