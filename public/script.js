@@ -39,9 +39,9 @@ var eggs = {
   TJOFR : new Brand("Trader Joe's Organic Free Range", "egg", "yes", "no", "yes", "yes", "no", "free-range"),
   MMF : new Brand("Misty Meadow Farms", "egg", "yes", "yes", "yes", "yes", "yes", "pasture raised"),
   OrgV : new Brand("Organic Valley", "egg", "yes", "yes", "yes", "yes", "no", "N/A"),
-  TCH : new Brand("The Country Hen", "egg", "no", "no", "no", "no", "no", "N/A"),
+  TCH : new Brand("The Country Hen", "egg", "yes", "yes", "no", "no", "no", "cage-free"),
   TLA : new Brand("Trout Lake Abbey", "egg", "yes", "yes", "yes", "yes", "yes", "pasture raised"),
-  WXF : new Brand("Wilcox Farms", "egg", "no", "no", "no", "no", "yes", "N/A")
+  WXF : new Brand("Wilcox Farms", "egg", "yes", "yes", "no", "no", "yes", "cage-free")
 };
 
 //Dropdown menu table creators
@@ -112,6 +112,8 @@ $(document).ready(function() {
         <ul><li>Trader Joe's organic Free Range</li> \
         <li>Stiebrs farms go-organic omega3</li> \
         <li>Misty Meadow Farms</li> \
+        <li>The Country Hen</li> \
+        <li>Wilcox Farms</li> \
         <li>Organic Valley</li> \
         <li>Trout Lake Abbey</li> \
         <li>Stiebrs Farms go-organic free-range</li> \
@@ -130,6 +132,8 @@ $(document).ready(function() {
         <ul><li>Stiebrs farms go-organic omega3</li> \
         <li>Misty Meadow Farms</li> \
         <li>Organic Valley</li> \
+        <li>The Country Hen</li> \
+        <li>Wilcox Farms</li> \
         <li>Trout Lake Abbey</li> \
         <li>Stiebrs Farms go-organic free-range</li> \
         <li>Stiebrs Farms pasture raised</li></ul>"),
@@ -168,6 +172,8 @@ $(document).ready(function() {
          <li>Misty Meadow Farms pasture raised</li> \
         <li>Trout Lake Abbey pasture raised</li> \
         <li>Stiebrs Farms go-organic free-range</li> \
+        <li>Wilcox Farms Cage free</li> \
+        <li>The Country Hen Cage free</li> \
         <li>Stiebrs Farms pasture raised</li></ul>"),
       $("#chickencheck").prepend("<h1>Chicken brands - good living conditions:</h1> \
         <ul><li>Trader Joe's Organic free range</li>\
