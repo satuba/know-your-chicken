@@ -159,8 +159,8 @@ $(document).ready(function() {
       $("#ischecked").prepend("<h1>Egg brands - good living conditions:</h1> \
         <ul><li>Trader Joe's cage free</li> \
         <li>Trader Joe's organic Free Range</li> \
-         <li>Misty Meadow Farms</li> \
-        <li>Trout Lake Abbey</li> \
+         <li>Misty Meadow Farms pasture raised</li> \
+        <li>Trout Lake Abbey pasture raised</li> \
         <li>Stiebrs Farms go-organic free-range</li> \
         <li>Stiebrs Farms pasture raised</li></ul>"),
       $("#chickencheck").prepend("<h1>Chicken brands - good living conditions:</h1> \
