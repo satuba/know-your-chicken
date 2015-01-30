@@ -23,20 +23,27 @@ var chickens = {
   FFO : new Brand("Foster Farms Organic", "chicken",              true,  true, true, true,  true, "cage-free"),
   safe : new Brand("Safeway Farms", "chicken",                    false, false, false, false, false, "cage-free"),
   opNat : new Brand("Open Nature", "chicken",                     false, false, true, true, true, "cage-free"),
-  oOrg : new Brand("O Organics", "chicken",                       true, true, true, true, true, "cage-free")
+  oOrg : new Brand("O Organics", "chicken",                       true, true, true, true, true, "cage-free"),
+  PFC : new Brand("Prestige Farms", "chicken",                    false, false, false, false, false, "none")
 };
 
 var eggs = {
+  EggB : new Brand("Eggland's Best", "egg", false, false, false, false, false, "none"),
  SFOO3 : new Brand("Stiebr's Farm Omega3", "egg", true, true, true, true, true, "none"),
   SFFR : new Brand("Stiebr's Farm Free Range", "egg", true, true, true, true, true, "free-range"),
   SFPR : new Brand("Stiebr's Farm Pasture Raised", "egg", true, true, true, true, false, "pasture raised"),
   TJCF : new Brand("Trader Joe's Cage Free", "egg", false, false, true, true, false, "none"),
-  TJOFR : new Brand("Trader Joe's Organic Free Range", "egg", true, false, true, true, false, "free-range")
+  TJOFR : new Brand("Trader Joe's Organic Free Range", "egg", true, false, true, true, false, "free-range"),
+  MMF : new Brand("Misty Meadow Farms", "egg", true, true, true, true, true, "pasture raised"),
+  OrgV : new Brand("Organic Valley", "egg", true, true, true, true, false, "none"),
+  TCH : new Brand("The Country Hen", "egg", false, false, false, false, false, "none"),
+  TLA : new Brand("Trout Lake Abbey", "egg", true, true, true, true, true, "pasture raised"),
+  WXF : new Brand("Wilcox Farms", "egg", false, false, false, false, true, "none")
 };
 
 $("#chickenDrop").on("change", function() {
   var selectedChicken = chickens[$(this).val()];
-   $('#chickenoutput').append("<table><tr>" + "<td> Name: </td> <td>" + selectedChicken.name + "</td> </tr> \
+   $('#chickenoutput').prepend("<table><tr>" + "<td> Name: </td> <td>" + selectedChicken.name + "</td> </tr> \
                         <tr>" + "<td> Type: </td> <td>" + selectedChicken.type + "</td> </tr> \
                         <tr>" + "<td> Organic: </td> <td>" + selectedChicken.organic + "</td> </tr> \
                         <tr>" + "<td> GMO Free: </td> <td>" + selectedChicken.gmofree+ "</td> </tr> \
@@ -48,7 +55,7 @@ $("#chickenDrop").on("change", function() {
 
 $("#eggDrop").on("change", function() {
   var selectedEgg = eggs[$(this).val()];
-    $('#eggoutput').append("<table><tr>" + "<td> Name: </td> <td>" + selectedEgg.name + "</td> </tr> \
+    $('#eggoutput').prepend("<table><tr>" + "<td> Name: </td> <td>" + selectedEgg.name + "</td> </tr> \
                         <tr>" + "<td> Type: </td> <td>" + selectedEgg.type + "</td> </tr> \
                         <tr>" + "<td> Organic: </td> <td>" + selectedEgg.organic + "</td> </tr> \
                         <tr>" + "<td> GMO Free: </td> <td>" + selectedEgg.gmofree+ "</td> </tr> \
@@ -97,6 +104,9 @@ $(document).ready(function(){
         if($(this).attr("value")=="organic"){
             $("#ischecked").append("<h1>Organic egg brands:</h1><ul><li>Trader Joe's organic Free Range</li> \
               <li>Stiebrs farms go-organic omega3</li> \
+              <li>Misty Meadow Farms</li> \
+              <li>Organic Valley</li> \
+              <li>Trout Lake Abbey</li> \
               <li>Stiebrs Farms go-organic free-range</li> \
               <li>Stiebrs Farms pasture raised</li></ul>"),
             $("#chickencheck").append("<h1>Organic chicken brands:</h1><ul><li>Trader Joe's Organic free range</li> \
@@ -110,6 +120,9 @@ $(document).ready(function(){
         if($(this).attr("value")=="gmoFree"){
             $("#ischecked").append("<h1>GMO free egg brands:</h1><ul> \
               <li>Stiebrs farms go-organic omega3</li> \
+              <li>Misty Meadow Farms</li> \
+              <li>Organic Valley</li> \
+              <li>Trout Lake Abbey</li> \
               <li>Stiebrs Farms go-organic free-range</li> \
               <li>Stiebrs Farms pasture raised</li></ul>"),
             $("#chickencheck").append("<h1>GMO free chicken brands:</h1><ul> \
@@ -124,6 +137,9 @@ $(document).ready(function(){
             $("#ischecked").append("<h1>Antibiotic free egg brands:</h1><ul><li>Trader Joe's cage free</li> \
               <li>Trader Joe's organic Free Range</li> \
               <li>Stiebrs farms go-organic omega3</li> \
+              <li>Misty Meadow Farms</li> \
+              <li>Organic Valley</li> \
+              <li>Trout Lake Abbey</li> \
               <li>Stiebrs Farms go-organic free-range</li> \
               <li>Stiebrs Farms pasture raised</li></ul>"),
             $("#chickencheck").append("<h1>Antibiotic free chicken brands:</h1><ul> \
@@ -140,6 +156,8 @@ $(document).ready(function(){
         if($(this).attr("value")=="range"){
             $("#ischecked").append("<h1>Egg brands - good living conditions:</h1><ul><li>Trader Joe's cage free</li> \
               <li>Trader Joe's organic Free Range</li> \
+               <li>Misty Meadow Farms</li> \
+              <li>Trout Lake Abbey</li> \
               <li>Stiebrs Farms go-organic free-range</li> \
               <li>Stiebrs Farms pasture raised</li></ul>"),
             $("#chickencheck").append("<h1>Chicken brands - good living conditions:</h1><ul> \
@@ -170,6 +188,8 @@ $(document).ready(function(){
         if($(this).attr("value")=="diet"){
             $("#ischecked").append("<h1>Egg brands - Natural diet:</h1><ul><li>Trader Joe's cage free</li> \
               <li>Trader Joe's organic Free Range</li> \
+              <li>Misty Meadow Farms</li> \
+              <li>Trout Lake Abbey</li> \
               <li>Stiebrs farms go-organic omega3</li> \
               <li>Stiebrs Farms go-organic free-range</li> \
               <li>Stiebrs Farms pasture raised</li></ul>"),
