@@ -13,16 +13,21 @@ main {
   margin-top: 40px;
 
 }
-.outputLayout {
-  display: inline-block;
-}
 
 td {
   font-size: 18px;
 }
 
-#output {
-  margin: 25px;
+.outputLayout {
+  margin: 50px;
+  display: inline;
+  padding-bottom: 15px;
+}
+#chickenoutput {
+  float: left;
+}
+#eggoutput {
+  float: right;
 }
 
 .dropdown {
