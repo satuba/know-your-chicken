@@ -57,6 +57,13 @@ $("#chickenDrop").on("change", function() {
                         <tr>" + "<td> Range: </td> <td>" + selectedChicken.range + "</td> </tr></table>");
  });
 
+$("#chickenDrop").on("mouseenter", function(){
+  $(this).css("border", "solid #77c298");
+})
+$("#chickenDrop").mouseleave(function(){
+  $(this).css("border", "1px solid #E6E6E6");      
+});
+
 $("#eggDrop").on("change", function() {
   var selectedEgg = eggs[$(this).val()];
     $('#eggoutput').prepend("<table><tr>" + "<td> Name: </td> <td>" + selectedEgg.name + "</td> </tr>           \
@@ -68,6 +75,13 @@ $("#eggDrop").on("change", function() {
                         <tr>" + "<td> Humanely Raised: </td> <td>" + selectedEgg.humaneRaised + "</td> </tr>    \
                         <tr>" + "<td> Range: </td> <td>" + selectedEgg.range + "</td> </tr></table>");
  });
+
+$("#eggDrop").on("mouseenter", function(){
+  $(this).css("border", "solid #77c298");
+})
+$("#eggDrop").mouseleave(function(){
+  $(this).css("border", "1px solid #E6E6E6");      
+});
 
 //JSON
 function save() {
